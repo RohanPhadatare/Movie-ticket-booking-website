@@ -1,0 +1,53 @@
+<html>
+<head>
+    <style>
+        body{
+            background-image: url(bg3.jpg);
+        }
+        .heading{
+            height:5%;
+            text-align:center;
+            padding:1%;
+            font-size:50px;
+        }
+        .middle{
+            align:center;
+            padding-left:30%;
+            margin-top:10%;
+        }
+        #t{
+        padding:5px;
+        font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <b>ADD A MOVIE</b>
+    </div>
+    <div class="middle">
+        <form action="adding.php" enctype="multipart/form-data" method="post">
+        Movie Name:<input type="text" name="name" id="t" required><br><br>
+        Movie Language:<select name="lan" id="t">
+            <option>Hindi</option>
+            <option>English</option>
+            <option>Marathi</option>
+        </select><br><br>
+        Movie Genre:<select name="gen" id="t">
+            <option>Action</option>
+            <option>Comedy</option>
+            <option>Horror</option>
+            <option>Romance</option>
+            <option>Drama</option>
+            <option>Adventure</option>
+            <option>Animation</option>
+        </select><br><br>
+        Movie Period:<input type="text" name="per" id="t" required><br><br>
+        Movie Rating:<input type="text" name="rat" id="t" required><br><br>
+        Movie Image:<input type="file" name="image" id="t" required><br><br>
+        <input type="submit" name="upload" value="submit" id="t">
+    </form>
+    </div>
+</body>
+</html>
+    

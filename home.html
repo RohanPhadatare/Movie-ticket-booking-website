@@ -1,0 +1,154 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="demo_css.css" >
+</head>
+<body>
+    
+<div class="topnav">
+    <img src="ticket-single.png" alt="logo" id="photo" align="left" width="125px" height="95px">
+    <form method="post" action="hsearch.php">
+  <input type="text" placeholder="Search for movies..." name="name">
+  <input type="submit" action="#search" id="sub" value="OK">
+   <a href="signin.html" id="su"><b>SIGN IN</b></a>
+   <a href="signup.html" id="su"><b>SIGN UP</b></a>
+  </form>
+<div class="bottom_menu">  
+<!-- <ul>
+ <li><a href="#all" id="bhr"><b>ALL</b></a></li>
+ <li><a href="#bollywood" id="bhr"><b>BOLLYWOOD</b></a></li>
+ <li><a href="#hollywood" id="bhr"><b>HOLLYWOOD</b></a></li>
+ <li><a href="#regional" id="bhr"><b>REGIONAL</b></a></li>
+ </ul>
+--> <marquee direction="left">
+  <b>*New releases have been added! Check out the trailers given below!* </b>
+</marquee>
+ </div>
+</div>
+
+
+ <div class="w3-content w3-section" style="max-width:500px;  margin-top:2%; margin-left:8%;" >
+   <img class="mySlides" src="avengers.jpeg" >
+   <img class="mySlides" src="thugs.jpg"  >
+   <img class="mySlides" src="gold.jpg"  >
+   <img class="mySlides" src="meter.jpg" >
+ </div>
+
+ <br>
+ 
+ <script>
+ var myIndex = 0;
+ carousel();
+ 
+ function carousel() {
+     var i;
+     var x = document.getElementsByClassName("mySlides");
+     for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+     }
+     myIndex++;
+     if (myIndex > x.length) {myIndex = 1}    
+     x[myIndex-1].style.display = "block";  
+     setTimeout(carousel, 2000); // Change image every 2 seconds
+ }
+ </script>
+ 
+<br>
+<br>
+<br>
+<br>
+  <table id="movies">
+    <tr>
+    <td><a href="signin.html"><img src="sui.jpg" alt="Sui Dhaaga"  id="p1" ></a><br> 
+    <button><a href="https://www.youtube.com">Trailer</a></button>
+    </td>
+    <td>
+        <a href="signin.html"><img src="nun.jpg" alt="nun" id="p1"  ></a><br> 
+            <button><a href="https://www.youtube.com">Trailer</a></button>
+            </td>
+            <tr>
+<td><a href="signin.html"><img src="stree-int.jpg" alt="stree" id="p1" ></a><br>
+<button><a href="https://www.youtube.com">Trailer</a></button>
+</td>
+<td><a href="signin.html"><img src="love.jpg" alt="LoveRatri" id="p1" ></a><br>
+<button><a href="https://www.youtube.com">Trailer</a></button>
+</td>
+            <tr>
+            <td><a href="signin.html"><img src="venom.jpg" alt="venom" id="p1" ></a><br> 
+             <button><a href="https://www.youtube.com">Trailer</a></button>
+           </td>
+           <td><a href="signin.html"><img src="andha.jpg" alt="Andhadhun" id="p1" ></a><br> 
+            <button><a href="https://www.youtube.com">Trailer</a></button>
+            </td>
+           </tr>
+                                                                            
+    
+            
+    
+        </table>
+            <table>
+      <tr>
+        <th><b>Ranking</b></th>
+        <th><b>Earnings(crores)</b></th>
+      </tr>
+      <tr>
+        <td>1. Sanju</td>
+        <td> 341.22</td>
+      </tr>
+      <tr>
+          <td>2. Padmaavat</td>
+          <td> 300.00</td>
+        </tr>
+        <tr>
+            <td>3. Avengers:Infinity War</td>
+            <td> 222.69</td>
+          </tr>
+          <tr>
+              <td>4. Race 3	</td>
+              <td> 169.00</td>
+            </tr>
+            <tr>
+                <td>5. Baaghi 2</td>
+                <td> 165</td>
+              </tr>
+              <tr>
+                  <td>6. Stree</td>
+                  <td> 127.42*</td>
+                </tr>
+                <tr>
+                    <td>7. Raazi</td>
+                    <td> 123.27</td>
+                  </tr>
+                  <tr>
+                      <td>8. Sonu Ke Titu Ki Sweety</td>
+                      <td> 108.23</td>
+                    </tr>
+                    <tr>
+                        <td>9. Gold</td>
+                        <td> 107.62</td>
+                      </tr>
+                      <tr>
+                          <td>10. Raid</td>
+                          <td> 101.25</td>
+                        </tr>
+                                                                                             
+    </table>
+<div class="trending">
+<br>
+<h3><b>Trending</b></h3><br>
+<div class="subcat">
+  <p>Venom</p>
+  <p>LoveYatri</p>
+  <p>Sui Dhaaga - Made in India</p>
+  <p>Boyz 2</p>
+  <p>Avengers: Infinity War Re-Release (Hindi)</p>
+  <p>Stree</p>
+  <p>Johnny English Strikes Again</p>
+</div>
+</div>  
+
+    
+</body>
+</html>

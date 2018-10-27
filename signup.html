@@ -1,0 +1,120 @@
+<html>
+    <head>
+    <title>
+        signup
+    </title>
+    <style>
+    body{
+        background-image: url(bg3.jpg); 
+    }
+    .sign{
+        float: center;
+    }
+    #one{
+        padding:5px;
+        font-size: 20px;
+        margin-left:47%;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    #two{
+        padding:5px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #logo{
+        margin-left: 45%;
+        margin-right: auto;
+    }
+    #form{
+        text-align: center;
+		vertical-align:top;
+		padding-bottom: 2%;
+        padding-top: 2%;
+        margin-left: 20%;
+        margin-right: 20%;
+        font-family: 'Consolas', Courier, monospace;
+    }
+    #google{
+        padding:5px;
+        font-size: 30px;
+        
+        color: black;
+        
+        margin-left: 20%;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    #facebook
+    {
+        padding:5px;
+        
+		
+    }
+
+    </style>
+    <script>
+    function validateform(){
+  /*      var nameRegex = /^[a-zA-Z'- ]+$/;
+        var validUsername = document.myform.name.value.match(nameRegex);
+        if(validUsername == null){
+            alert("Your name is not valid!");
+            return false;
+        }
+*/
+        var firstpassword=document.myform.pass.value;  
+        var secondpassword=document.myform.confirmpass.value;  
+        if(firstpassword!=secondpassword){ 
+            alert("password must be same!"); 
+            return false;  
+        }
+/*
+        var x=document.myform.email.value;  
+        var atposition=x.indexOf("@");  
+        var dotposition=x.lastIndexOf("."); 
+        if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+            alert("Please enter a valid e-mail address!");  
+            return false;  
+        }
+        
+       
+        else {
+            return true;
+        }*/
+    }
+    </script>
+</head>
+    <body>
+
+            <img src="ticket-single.png" id="logo" width="10%" alt="logo">
+		
+        <div class="sign">          
+        <form action="signedup.php" method="post" name="myform" onsubmit="return validateform();">
+		<table align="center">
+           <tr><td>
+		   <b> Name*</b>:</td><td><input type="text" name="name" id="two" required></td>
+           </tr>
+		   <tr>
+		   <td><b> Email id*</b>:</td><td><input type="text" name="email" id="two" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required></td>
+            
+			</tr>
+			<tr><td>
+			<b>Password*</b>:</td><td><input type="password" name="pass" id="two" required></td>
+			</tr>
+			<tr><td>
+			<b>Confirm Password*</b>:</td><td><input type="password" name="confirmpass" id="two" required></td>
+			</tr>
+			<tr><td>
+			 <b>Mobile No*</b>:</td><td><input type="text" name="mobile" id="two" pattern="[1-9]{1}[0-9]{9}" required></td>
+			</tr>
+			</table>
+			<br>
+			<input type="submit" value="SIGNUP" id="one">
+			
+		
+        </form>
+             <table align="center">
+              <th width="40%"><button id="google"><a  href="https://wwww.gmail.com"><img src="google.png"></a></button></th>
+              <th width="40%"><button id="facebook"><a  href="https://wwww.facebook.com"><img src="fb.png"></a></button></th>
+             </table>
+              </div>
+    </body>
+</html>
